@@ -8,25 +8,22 @@
 
 /* Begin PBXBuildFile section */
 		8AAE72112827DE28002550E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72102827DE28002550E4 /* AppDelegate.swift */; };
-		8AAE72132827DE28002550E4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72122827DE28002550E4 /* SceneDelegate.swift */; };
 		8AAE72152827DE28002550E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72142827DE28002550E4 /* ViewController.swift */; };
-		8AAE72182827DE28002550E4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72162827DE28002550E4 /* Main.storyboard */; };
 		8AAE721A2827DE2B002550E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72192827DE2B002550E4 /* Assets.xcassets */; };
 		8AAE721D2827DE2B002550E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE721B2827DE2B002550E4 /* LaunchScreen.storyboard */; };
 		8AAE72282827DE2B002550E4 /* RobustaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72272827DE2B002550E4 /* RobustaTaskTests.swift */; };
-		8AAE72322827DE2B002550E4 /* RobustaTaskUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72312827DE2B002550E4 /* RobustaTaskUITests.swift */; };
-		8AAE72342827DE2B002550E4 /* RobustaTaskUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72332827DE2B002550E4 /* RobustaTaskUITestsLaunchTests.swift */; };
+		8AAE72632827E75F002550E4 /* RepositoriesPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72602827E75F002550E4 /* RepositoriesPresenter.swift */; };
+		8AAE72642827E75F002550E4 /* RepositoriesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72612827E75F002550E4 /* RepositoriesViewController.swift */; };
+		8AAE72652827E75F002550E4 /* RepositoriesViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72622827E75F002550E4 /* RepositoriesViewController.xib */; };
+		8AAE72732827FBC3002550E4 /* AppCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72722827FBC3002550E4 /* AppCoordinator.swift */; };
+		8AAE72752827FBD9002550E4 /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72742827FBD9002550E4 /* Coordinator.swift */; };
+		8AAE72772827FBE9002550E4 /* CoordinatorDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72762827FBE9002550E4 /* CoordinatorDelegate.swift */; };
+		8AAE727D2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE727C2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift */; };
+		8AAE727F2827FC90002550E4 /* RepositoriesCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE727E2827FC90002550E4 /* RepositoriesCoordinator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
 		8AAE72242827DE2B002550E4 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 8AAE72052827DE28002550E4 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 8AAE720C2827DE28002550E4;
-			remoteInfo = RobustaTask;
-		};
-		8AAE722E2827DE2B002550E4 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 8AAE72052827DE28002550E4 /* Project object */;
 			proxyType = 1;
@@ -38,17 +35,20 @@
 /* Begin PBXFileReference section */
 		8AAE720D2827DE28002550E4 /* RobustaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobustaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE72102827DE28002550E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AAE72122827DE28002550E4 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8AAE72142827DE28002550E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8AAE72172827DE28002550E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8AAE72192827DE2B002550E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAE721C2827DE2B002550E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AAE721E2827DE2B002550E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8AAE72232827DE2B002550E4 /* RobustaTaskTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaTaskTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE72272827DE2B002550E4 /* RobustaTaskTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskTests.swift; sourceTree = "<group>"; };
-		8AAE722D2827DE2B002550E4 /* RobustaTaskUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RobustaTaskUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		8AAE72312827DE2B002550E4 /* RobustaTaskUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskUITests.swift; sourceTree = "<group>"; };
-		8AAE72332827DE2B002550E4 /* RobustaTaskUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RobustaTaskUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		8AAE72602827E75F002550E4 /* RepositoriesPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenter.swift; sourceTree = "<group>"; };
+		8AAE72612827E75F002550E4 /* RepositoriesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewController.swift; sourceTree = "<group>"; };
+		8AAE72622827E75F002550E4 /* RepositoriesViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoriesViewController.xib; sourceTree = "<group>"; };
+		8AAE72722827FBC3002550E4 /* AppCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppCoordinator.swift; sourceTree = "<group>"; };
+		8AAE72742827FBD9002550E4 /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
+		8AAE72762827FBE9002550E4 /* CoordinatorDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinatorDelegate.swift; sourceTree = "<group>"; };
+		8AAE727C2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCoordinatorProtocol.swift; sourceTree = "<group>"; };
+		8AAE727E2827FC90002550E4 /* RepositoriesCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesCoordinator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,13 +66,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AAE722A2827DE2B002550E4 /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -81,7 +74,6 @@
 			children = (
 				8AAE720F2827DE28002550E4 /* RobustaTask */,
 				8AAE72262827DE2B002550E4 /* RobustaTaskTests */,
-				8AAE72302827DE2B002550E4 /* RobustaTaskUITests */,
 				8AAE720E2827DE28002550E4 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -91,7 +83,6 @@
 			children = (
 				8AAE720D2827DE28002550E4 /* RobustaTask.app */,
 				8AAE72232827DE2B002550E4 /* RobustaTaskTests.xctest */,
-				8AAE722D2827DE2B002550E4 /* RobustaTaskUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,10 +90,12 @@
 		8AAE720F2827DE28002550E4 /* RobustaTask */ = {
 			isa = PBXGroup;
 			children = (
-				8AAE72102827DE28002550E4 /* AppDelegate.swift */,
-				8AAE72122827DE28002550E4 /* SceneDelegate.swift */,
+				8AAE726F2827FB38002550E4 /* Repositories Module */,
+				8AAE726E2827E889002550E4 /* Application */,
+				8AAE726D2827E880002550E4 /* Resources */,
+				8AAE72672827E843002550E4 /* Utilities */,
+				8AAE72662827E766002550E4 /* Repositories */,
 				8AAE72142827DE28002550E4 /* ViewController.swift */,
-				8AAE72162827DE28002550E4 /* Main.storyboard */,
 				8AAE72192827DE2B002550E4 /* Assets.xcassets */,
 				8AAE721B2827DE2B002550E4 /* LaunchScreen.storyboard */,
 				8AAE721E2827DE2B002550E4 /* Info.plist */,
@@ -118,13 +111,120 @@
 			path = RobustaTaskTests;
 			sourceTree = "<group>";
 		};
-		8AAE72302827DE2B002550E4 /* RobustaTaskUITests */ = {
+		8AAE72662827E766002550E4 /* Repositories */ = {
 			isa = PBXGroup;
 			children = (
-				8AAE72312827DE2B002550E4 /* RobustaTaskUITests.swift */,
-				8AAE72332827DE2B002550E4 /* RobustaTaskUITestsLaunchTests.swift */,
 			);
-			path = RobustaTaskUITests;
+			path = Repositories;
+			sourceTree = "<group>";
+		};
+		8AAE72672827E843002550E4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE726C2827E875002550E4 /* Bases */,
+				8AAE726B2827E86C002550E4 /* Constants */,
+				8AAE726A2827E85F002550E4 /* Helpers */,
+				8AAE72692827E856002550E4 /* Networking */,
+				8AAE72682827E84E002550E4 /* Navigation */,
+			);
+			path = Utilities;
+			sourceTree = "<group>";
+		};
+		8AAE72682827E84E002550E4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72712827FBB3002550E4 /* Coordinators */,
+				8AAE72702827FBAE002550E4 /* Core */,
+			);
+			path = Navigation;
+			sourceTree = "<group>";
+		};
+		8AAE72692827E856002550E4 /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Networking;
+			sourceTree = "<group>";
+		};
+		8AAE726A2827E85F002550E4 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		8AAE726B2827E86C002550E4 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		8AAE726C2827E875002550E4 /* Bases */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Bases;
+			sourceTree = "<group>";
+		};
+		8AAE726D2827E880002550E4 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		8AAE726E2827E889002550E4 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72102827DE28002550E4 /* AppDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		8AAE726F2827FB38002550E4 /* Repositories Module */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72782827FC1B002550E4 /* Presntations */,
+				8AAE72602827E75F002550E4 /* RepositoriesPresenter.swift */,
+				8AAE72612827E75F002550E4 /* RepositoriesViewController.swift */,
+				8AAE72622827E75F002550E4 /* RepositoriesViewController.xib */,
+			);
+			path = "Repositories Module";
+			sourceTree = "<group>";
+		};
+		8AAE72702827FBAE002550E4 /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72742827FBD9002550E4 /* Coordinator.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		8AAE72712827FBB3002550E4 /* Coordinators */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72722827FBC3002550E4 /* AppCoordinator.swift */,
+				8AAE72762827FBE9002550E4 /* CoordinatorDelegate.swift */,
+			);
+			path = Coordinators;
+			sourceTree = "<group>";
+		};
+		8AAE72782827FC1B002550E4 /* Presntations */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE727B2827FC39002550E4 /* Navigation */,
+			);
+			path = Presntations;
+			sourceTree = "<group>";
+		};
+		8AAE727B2827FC39002550E4 /* Navigation */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE727C2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift */,
+				8AAE727E2827FC90002550E4 /* RepositoriesCoordinator.swift */,
+			);
+			path = Navigation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -165,24 +265,6 @@
 			productReference = 8AAE72232827DE2B002550E4 /* RobustaTaskTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		8AAE722C2827DE2B002550E4 /* RobustaTaskUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 8AAE723D2827DE2B002550E4 /* Build configuration list for PBXNativeTarget "RobustaTaskUITests" */;
-			buildPhases = (
-				8AAE72292827DE2B002550E4 /* Sources */,
-				8AAE722A2827DE2B002550E4 /* Frameworks */,
-				8AAE722B2827DE2B002550E4 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				8AAE722F2827DE2B002550E4 /* PBXTargetDependency */,
-			);
-			name = RobustaTaskUITests;
-			productName = RobustaTaskUITests;
-			productReference = 8AAE722D2827DE2B002550E4 /* RobustaTaskUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -197,10 +279,6 @@
 						CreatedOnToolsVersion = 13.0;
 					};
 					8AAE72222827DE2B002550E4 = {
-						CreatedOnToolsVersion = 13.0;
-						TestTargetID = 8AAE720C2827DE28002550E4;
-					};
-					8AAE722C2827DE2B002550E4 = {
 						CreatedOnToolsVersion = 13.0;
 						TestTargetID = 8AAE720C2827DE28002550E4;
 					};
@@ -221,7 +299,6 @@
 			targets = (
 				8AAE720C2827DE28002550E4 /* RobustaTask */,
 				8AAE72222827DE2B002550E4 /* RobustaTaskTests */,
-				8AAE722C2827DE2B002550E4 /* RobustaTaskUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -233,18 +310,11 @@
 			files = (
 				8AAE721D2827DE2B002550E4 /* LaunchScreen.storyboard in Resources */,
 				8AAE721A2827DE2B002550E4 /* Assets.xcassets in Resources */,
-				8AAE72182827DE28002550E4 /* Main.storyboard in Resources */,
+				8AAE72652827E75F002550E4 /* RepositoriesViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		8AAE72212827DE2B002550E4 /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		8AAE722B2827DE2B002550E4 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -258,9 +328,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAE727F2827FC90002550E4 /* RepositoriesCoordinator.swift in Sources */,
 				8AAE72152827DE28002550E4 /* ViewController.swift in Sources */,
+				8AAE72642827E75F002550E4 /* RepositoriesViewController.swift in Sources */,
+				8AAE72772827FBE9002550E4 /* CoordinatorDelegate.swift in Sources */,
+				8AAE72752827FBD9002550E4 /* Coordinator.swift in Sources */,
+				8AAE72732827FBC3002550E4 /* AppCoordinator.swift in Sources */,
 				8AAE72112827DE28002550E4 /* AppDelegate.swift in Sources */,
-				8AAE72132827DE28002550E4 /* SceneDelegate.swift in Sources */,
+				8AAE727D2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift in Sources */,
+				8AAE72632827E75F002550E4 /* RepositoriesPresenter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -272,15 +348,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8AAE72292827DE2B002550E4 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				8AAE72342827DE2B002550E4 /* RobustaTaskUITestsLaunchTests.swift in Sources */,
-				8AAE72322827DE2B002550E4 /* RobustaTaskUITests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -289,22 +356,9 @@
 			target = 8AAE720C2827DE28002550E4 /* RobustaTask */;
 			targetProxy = 8AAE72242827DE2B002550E4 /* PBXContainerItemProxy */;
 		};
-		8AAE722F2827DE2B002550E4 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 8AAE720C2827DE28002550E4 /* RobustaTask */;
-			targetProxy = 8AAE722E2827DE2B002550E4 /* PBXContainerItemProxy */;
-		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8AAE72162827DE28002550E4 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8AAE72172827DE28002550E4 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8AAE721B2827DE2B002550E4 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -439,11 +493,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXJ7S8T94V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RobustaTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -451,11 +506,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo.RobustaTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -466,11 +521,12 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = KXJ7S8T94V;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RobustaTask/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -478,11 +534,11 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo.RobustaTask;
+				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -534,50 +590,6 @@
 			};
 			name = Release;
 		};
-		8AAE723E2827DE2B002550E4 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo.RobustaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RobustaTask;
-			};
-			name = Debug;
-		};
-		8AAE723F2827DE2B002550E4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.robustatask.demo.RobustaTaskUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = RobustaTask;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -604,15 +616,6 @@
 			buildConfigurations = (
 				8AAE723B2827DE2B002550E4 /* Debug */,
 				8AAE723C2827DE2B002550E4 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		8AAE723D2827DE2B002550E4 /* Build configuration list for PBXNativeTarget "RobustaTaskUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				8AAE723E2827DE2B002550E4 /* Debug */,
-				8AAE723F2827DE2B002550E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
