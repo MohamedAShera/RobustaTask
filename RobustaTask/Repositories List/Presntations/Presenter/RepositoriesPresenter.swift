@@ -7,46 +7,50 @@
 
 import UIKit
 
-class RepositoriesPresenter: RepositoriesPresenterProtocol {
-    
+class RepositoriesPresenter {
     weak var view: RepositoriesViewProtocol?
     var repositories: [RepositoryRepresentable] = []
+    var filterdRepo: [RepositoryRepresentable] = []
     private var timer: Timer?
     private let fetchRepositoriesUseCase: FetchRepositoriesUseCaseContract
-    
+    private let searchOnLocalRepoUseCase: SearchOnLocalRepoUseCaseContract
     
     init(
         view: RepositoriesViewProtocol = RepositoriesViewController(),
-        fetchRepositoriesUseCase: FetchRepositoriesUseCaseContract = FetchRepositoriesUseCase()
+        fetchRepositoriesUseCase: FetchRepositoriesUseCaseContract = FetchRepositoriesUseCase(),
+        searchOnLocalRepoUseCase: SearchOnLocalRepoUseCaseContract = SearchOnLocalRepoUseCase()
     ) {
         self.view = view
         self.fetchRepositoriesUseCase = fetchRepositoriesUseCase
+        self.searchOnLocalRepoUseCase = searchOnLocalRepoUseCase
+        didLoad()
     }
-    
-    func fetchWithDebounceRepositories(searchKey: String) {
-        timer?.invalidate()
-        timer = .scheduledTimer(withTimeInterval: 0.05, repeats: false) { [weak self] timer in
-            guard let self = self else { return }
-            self.fetchRepositories(searchKey: searchKey)
-        }
+}
+
+//MARK: - RepositoriesPresenterProtocol
+
+extension RepositoriesPresenter: RepositoriesPresenterProtocol {
+    func fetchRepositories(searchKey: String) {
+        guard searchKey.count > 1 else { return }
+        filterdRepo = searchOnLocalRepoUseCase
+            .execute(
+                from: searchKey,
+                and: repositories
+            )
+        self.view?.dispalyRepositories(repositories: filterdRepo)
     }
 }
 
 //MARK: - Private funcation
 
 private extension RepositoriesPresenter {
-    func fetchRepositories(searchKey: String) {
-        guard searchKey.count > 1 else { return }
-        fetchRepositoriesUseCase.execute(searchKey: searchKey, page: 1, count: 100) { result in
+    func didLoad() {
+        fetchRepositoriesUseCase.execute { result in
             guard case let .success(data) = result else {
                 // handel error
                 return
             }
-            DispatchQueue.main.async { [weak self] in
-                guard let self = self else { return }
-                self.repositories = data.items ?? []
-                self.view?.dispalyRepositories(repositories: data.items ?? [])
-            }
+            self.repositories = data
         }
     }
 }

@@ -7,5 +7,5 @@
 
 import Foundation
 protocol RepositoriesRepositoryContract {
-    func getRepositories(searchKey: String, page: Int, count: Int, completion: @escaping (Result<RepositoryResponse, Error>) -> Void)
+    func getRepositories(completion: @escaping (Result<[Item], Error>) -> Void)
 }

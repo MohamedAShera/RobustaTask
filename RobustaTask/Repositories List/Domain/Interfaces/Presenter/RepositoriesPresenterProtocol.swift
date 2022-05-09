@@ -10,5 +10,5 @@ import Foundation
 protocol RepositoriesPresenterProtocol: AnyObject {
     var view: RepositoriesViewProtocol? { get set }
     var repositories: [RepositoryRepresentable] { get set }
-    func fetchWithDebounceRepositories(searchKey: String)
+    func fetchRepositories(searchKey: String)
 }

@@ -9,6 +9,6 @@ import Foundation
 
 enum NetworkConstants {
 
-    static let baseUrl: String = "https://api.github.com/search/"
+    static let baseUrl: String = "https://api.github.com/"
     
 }

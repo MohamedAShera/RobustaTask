@@ -18,12 +18,9 @@ final class RepositoriesRepository {
 
 //MARK: - RepositoriesRepositoryContract
 extension RepositoriesRepository: RepositoriesRepositoryContract {
-    func getRepositories(searchKey: String, page: Int, count: Int, completion: @escaping (Result<RepositoryResponse, Error>) -> Void) {
+    func getRepositories(completion: @escaping (Result<[Item], Error>) -> Void) {
         service
             .getRepositories(
-                searchKey: searchKey,
-                page: page,
-                count: count,
                 completion: completion
             )
     }

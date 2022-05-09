@@ -20,13 +20,12 @@ final class RepositoriesService {
 
 //MARK: - RepositoriesServiceContract
 extension RepositoriesService: RepositoriesServiceContract {
-    func getRepositories(searchKey: String, page: Int, count: Int, completion: @escaping (Result<RepositoryResponse, Error>) -> Void) {
+    func getRepositories(completion: @escaping (Result<[Item], Error>) -> Void) {
         let request = APIBuilder()
             .setPath(using: APIConstants.repositories)
             .setMethod(using: .get)
-            .setParameters(using: .query(["q": searchKey, "per_page": count, "page" : page]))
             .build()
         
-        apiService.request(using: request, responseType: RepositoryResponse.self, decoder: JSONDecoder(), completion: completion)
+        apiService.request(using: request, responseType: [Item].self, decoder: JSONDecoder(), completion: completion)
     }
 }

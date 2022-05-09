@@ -14,16 +14,10 @@ final class FetchRepositoriesUseCase: FetchRepositoriesUseCaseContract {
         self.repository = repository
     }
     func execute(
-        searchKey: String,
-        page: Int,
-        count: Int,
-        completion: @escaping (Result<RepositoryResponse, Error>) -> Void
+        completion: @escaping (Result<[Item], Error>) -> Void
     ) {
         repository
             .getRepositories(
-                searchKey: searchKey,
-                page: page,
-                count: count,
                 completion: completion
             )
     }

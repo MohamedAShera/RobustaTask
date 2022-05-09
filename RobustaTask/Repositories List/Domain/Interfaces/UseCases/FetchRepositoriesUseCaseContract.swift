@@ -8,5 +8,5 @@
 import Foundation
 
 protocol FetchRepositoriesUseCaseContract {
-    func execute(searchKey: String, page: Int, count: Int, completion: @escaping (Result<RepositoryResponse, Error>) -> Void)
+    func execute(completion: @escaping (Result<[Item], Error>) -> Void)
 }

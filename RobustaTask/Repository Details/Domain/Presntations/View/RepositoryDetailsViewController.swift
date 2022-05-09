@@ -7,7 +7,7 @@
 
 import UIKit
 
-class RepositoryDetailsViewController: UIViewController, RepositoryDetailsViewProtocol {
+class RepositoryDetailsViewController: UIViewController {
     
     static func create(item: RepositoryRepresentable?) -> RepositoryDetailsViewController {
         let vc = RepositoryDetailsViewController()
@@ -23,15 +23,11 @@ class RepositoryDetailsViewController: UIViewController, RepositoryDetailsViewPr
     @IBOutlet weak var licenseLabel: UILabel!
     @IBOutlet weak var languageLabel: UILabel!
     
-	var presenter: RepositoryDetailsPresenterProtocol?
     var item: RepositoryRepresentable?
 
 	override func viewDidLoad() {
         super.viewDidLoad()
-        presenter?.view = self
         addLoadedData(item: item)
-        presenter = RepositoryDetailsPresenter(view: self)
-        presenter?.viewDidLoad()
     }
     
     private func addLoadedData(item: RepositoryRepresentable?) {
@@ -39,7 +35,7 @@ class RepositoryDetailsViewController: UIViewController, RepositoryDetailsViewPr
         repositoryImage.load(urlString: item?.repositoryOwner?.ownerURLImage)
         ownerNameLabel.text = (item?.repositoryOwner?.ownerName).value
         forksCountLabel.text = item?.numberOfForks.description
-        dateCreatedLabel.text = item?.creationDate.description
+        dateCreatedLabel.text = item?.dateInString
         starsCountLabel.text = item?.numberOfStars.description
         licenseLabel.text = item?.licenseName
         languageLabel.text = item?.repositoryLanguage

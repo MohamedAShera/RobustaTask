@@ -30,6 +30,7 @@ class RepositoriesViewController: UIViewController {
         super.viewDidLoad()
         tableView.registerCellNib(RepositoryTableViewCell.self)
         presenter = RepositoriesPresenter(view: self)
+        navigationItem.title = "Search"
     }
 }
 
@@ -46,7 +47,7 @@ extension RepositoriesViewController: RepositoriesViewProtocol {
 
 extension RepositoriesViewController: UISearchBarDelegate {
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        presenter?.fetchWithDebounceRepositories(searchKey: searchText)
+        presenter?.fetchRepositories(searchKey: searchText.lowercased())
     }
 
     func searchBarSearchButtonClicked(_ searchBar: UISearchBar) {

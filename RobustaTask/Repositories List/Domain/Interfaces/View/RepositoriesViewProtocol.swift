@@ -8,5 +8,8 @@
 import Foundation
 
 protocol RepositoriesViewProtocol: AnyObject {
+    var presenter: RepositoriesPresenterProtocol? { get }
+    var repositories: [RepositoryRepresentable] { get }
+    
     func dispalyRepositories(repositories: [RepositoryRepresentable])
 }

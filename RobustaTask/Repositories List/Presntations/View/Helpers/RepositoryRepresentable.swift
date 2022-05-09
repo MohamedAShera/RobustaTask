@@ -10,7 +10,7 @@ import Foundation
 protocol RepositoryRepresentable {
     var repositoryId: Int { get }
     var repositoryName: String { get }
-    var creationDate: Date { get }
+    var dateInString: String { get }
     var repositoryOwner: RepositoryOwnerRepresentable? { get }
     var numberOfForks: Int { get }
     var numberOfStars: Int { get }

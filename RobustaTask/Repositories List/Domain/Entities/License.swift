@@ -8,11 +8,5 @@
 import Foundation
 
 struct License: Codable {
-    let key, name: String?
-    let url: String?
-
-    enum CodingKeys: String, CodingKey {
-        case key, name
-        case url
-    }
+    let name: String?
 }

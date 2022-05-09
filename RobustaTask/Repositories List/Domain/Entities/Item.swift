@@ -33,11 +33,11 @@ extension Item: RepositoryRepresentable {
     }
     
     var repositoryName: String {
-        self.name.value
+        (self.name?.lowercased()).value
     }
     
-    var creationDate: Date {
-        self.createdAt ?? Date()
+    var dateInString: String {
+        (self.createdAt?.timeAgoDisplay()).value
     }
     
     var repositoryOwner: RepositoryOwnerRepresentable? {
