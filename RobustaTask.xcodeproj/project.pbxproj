@@ -47,6 +47,17 @@
 		8AAE72CC28283C1D002550E4 /* RepositoriesRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72CB28283C1D002550E4 /* RepositoriesRepository.swift */; };
 		8AAE72CE28284114002550E4 /* FetchRepositoriesUseCaseContract.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72CD28284114002550E4 /* FetchRepositoriesUseCaseContract.swift */; };
 		8AAE72D1282841F8002550E4 /* FetchRepositoriesUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72D0282841F8002550E4 /* FetchRepositoriesUseCase.swift */; };
+		8AAE72D42828431A002550E4 /* RepositoriesPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72D32828431A002550E4 /* RepositoriesPresenterProtocol.swift */; };
+		8AAE72D728284340002550E4 /* RepositoriesViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72D628284340002550E4 /* RepositoriesViewProtocol.swift */; };
+		8AAE72D928285B23002550E4 /* Image+Helpers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72D828285B23002550E4 /* Image+Helpers.swift */; };
+		8AAE72DE28285C01002550E4 /* RepositoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72DC28285C01002550E4 /* RepositoryTableViewCell.swift */; };
+		8AAE72DF28285C01002550E4 /* RepositoryTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72DD28285C01002550E4 /* RepositoryTableViewCell.xib */; };
+		8AAE72EC28286D12002550E4 /* RepositoryDetailsPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72E928286D12002550E4 /* RepositoryDetailsPresenter.swift */; };
+		8AAE72ED28286D13002550E4 /* RepositoryDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72EA28286D12002550E4 /* RepositoryDetailsViewController.swift */; };
+		8AAE72EE28286D13002550E4 /* RepositoryDetailsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72EB28286D12002550E4 /* RepositoryDetailsViewController.xib */; };
+		8AAE72F328286DBB002550E4 /* RepositoryDetailsViewProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72F228286DBB002550E4 /* RepositoryDetailsViewProtocol.swift */; };
+		8AAE72F528286DD0002550E4 /* RepositoryDetailsPresenterProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72F428286DD0002550E4 /* RepositoryDetailsPresenterProtocol.swift */; };
+		8AAE72FA28287910002550E4 /* DateExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72F928287910002550E4 /* DateExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -103,6 +114,17 @@
 		8AAE72CB28283C1D002550E4 /* RepositoriesRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesRepository.swift; sourceTree = "<group>"; };
 		8AAE72CD28284114002550E4 /* FetchRepositoriesUseCaseContract.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoriesUseCaseContract.swift; sourceTree = "<group>"; };
 		8AAE72D0282841F8002550E4 /* FetchRepositoriesUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchRepositoriesUseCase.swift; sourceTree = "<group>"; };
+		8AAE72D32828431A002550E4 /* RepositoriesPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesPresenterProtocol.swift; sourceTree = "<group>"; };
+		8AAE72D628284340002550E4 /* RepositoriesViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoriesViewProtocol.swift; sourceTree = "<group>"; };
+		8AAE72D828285B23002550E4 /* Image+Helpers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Image+Helpers.swift"; sourceTree = "<group>"; };
+		8AAE72DC28285C01002550E4 /* RepositoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryTableViewCell.swift; sourceTree = "<group>"; };
+		8AAE72DD28285C01002550E4 /* RepositoryTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryTableViewCell.xib; sourceTree = "<group>"; };
+		8AAE72E928286D12002550E4 /* RepositoryDetailsPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsPresenter.swift; sourceTree = "<group>"; };
+		8AAE72EA28286D12002550E4 /* RepositoryDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewController.swift; sourceTree = "<group>"; };
+		8AAE72EB28286D12002550E4 /* RepositoryDetailsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RepositoryDetailsViewController.xib; sourceTree = "<group>"; };
+		8AAE72F228286DBB002550E4 /* RepositoryDetailsViewProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsViewProtocol.swift; sourceTree = "<group>"; };
+		8AAE72F428286DD0002550E4 /* RepositoryDetailsPresenterProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryDetailsPresenterProtocol.swift; sourceTree = "<group>"; };
+		8AAE72F928287910002550E4 /* DateExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateExtension.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,7 +166,8 @@
 		8AAE720F2827DE28002550E4 /* RobustaTask */ = {
 			isa = PBXGroup;
 			children = (
-				8AAE726F2827FB38002550E4 /* Repositories Module */,
+				8AAE72E328286B97002550E4 /* Repository Details */,
+				8AAE726F2827FB38002550E4 /* Repositories List */,
 				8AAE726E2827E889002550E4 /* Application */,
 				8AAE726D2827E880002550E4 /* Resources */,
 				8AAE72672827E843002550E4 /* Utilities */,
@@ -206,6 +229,7 @@
 		8AAE726A2827E85F002550E4 /* Helpers */ = {
 			isa = PBXGroup;
 			children = (
+				8AAE72F828287906002550E4 /* Date */,
 				8AAE729F2828259A002550E4 /* UITableView */,
 				8AAE729C28282579002550E4 /* NSObject */,
 				8AAE729928282545002550E4 /* View */,
@@ -252,14 +276,14 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		8AAE726F2827FB38002550E4 /* Repositories Module */ = {
+		8AAE726F2827FB38002550E4 /* Repositories List */ = {
 			isa = PBXGroup;
 			children = (
 				8AAE728128281BD7002550E4 /* Domain */,
 				8AAE728028281BCD002550E4 /* Data */,
 				8AAE72782827FC1B002550E4 /* Presntations */,
 			);
-			path = "Repositories Module";
+			path = "Repositories List";
 			sourceTree = "<group>";
 		};
 		8AAE72702827FBAE002550E4 /* Core */ = {
@@ -282,8 +306,8 @@
 		8AAE72782827FC1B002550E4 /* Presntations */ = {
 			isa = PBXGroup;
 			children = (
-				8AAE728828281C16002550E4 /* View */,
 				8AAE728728281C0D002550E4 /* Presenter */,
+				8AAE728828281C16002550E4 /* View */,
 				8AAE727B2827FC39002550E4 /* Navigation */,
 			);
 			path = Presntations;
@@ -344,6 +368,8 @@
 		8AAE728528281BFF002550E4 /* Interfaces */ = {
 			isa = PBXGroup;
 			children = (
+				8AAE72D52828432E002550E4 /* View */,
+				8AAE72D2282842F3002550E4 /* Presenter */,
 				8AAE72CF282841E5002550E4 /* UseCases */,
 				8AAE72C828283BC7002550E4 /* Repository */,
 				8AAE72BC28282B8A002550E4 /* Service */,
@@ -373,9 +399,9 @@
 		8AAE728828281C16002550E4 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				8AAE72DB28285BDD002550E4 /* Cells */,
+				8AAE72DA28285BB6002550E4 /* Controller */,
 				8AAE72C3282834AC002550E4 /* Helpers */,
-				8AAE72612827E75F002550E4 /* RepositoriesViewController.swift */,
-				8AAE72622827E75F002550E4 /* RepositoriesViewController.xib */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -408,6 +434,7 @@
 			isa = PBXGroup;
 			children = (
 				8AAE729A2828254C002550E4 /* View+Helpers.swift */,
+				8AAE72D828285B23002550E4 /* Image+Helpers.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -500,6 +527,116 @@
 			path = UseCases;
 			sourceTree = "<group>";
 		};
+		8AAE72D2282842F3002550E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72D32828431A002550E4 /* RepositoriesPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8AAE72D52828432E002550E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72D628284340002550E4 /* RepositoriesViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AAE72DA28285BB6002550E4 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72612827E75F002550E4 /* RepositoriesViewController.swift */,
+				8AAE72622827E75F002550E4 /* RepositoriesViewController.xib */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8AAE72DB28285BDD002550E4 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72DC28285C01002550E4 /* RepositoryTableViewCell.swift */,
+				8AAE72DD28285C01002550E4 /* RepositoryTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8AAE72E328286B97002550E4 /* Repository Details */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72E528286C62002550E4 /* Domain */,
+			);
+			path = "Repository Details";
+			sourceTree = "<group>";
+		};
+		8AAE72E428286C58002550E4 /* Interfaces */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72F128286D49002550E4 /* Presenter */,
+				8AAE72F028286D43002550E4 /* View */,
+			);
+			path = Interfaces;
+			sourceTree = "<group>";
+		};
+		8AAE72E528286C62002550E4 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72E628286C6F002550E4 /* Presntations */,
+				8AAE72E428286C58002550E4 /* Interfaces */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		8AAE72E628286C6F002550E4 /* Presntations */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72EF28286D27002550E4 /* View */,
+				8AAE72E828286CFF002550E4 /* Presenter */,
+			);
+			path = Presntations;
+			sourceTree = "<group>";
+		};
+		8AAE72E828286CFF002550E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72E928286D12002550E4 /* RepositoryDetailsPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8AAE72EF28286D27002550E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72EA28286D12002550E4 /* RepositoryDetailsViewController.swift */,
+				8AAE72EB28286D12002550E4 /* RepositoryDetailsViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AAE72F028286D43002550E4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72F228286DBB002550E4 /* RepositoryDetailsViewProtocol.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8AAE72F128286D49002550E4 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72F428286DD0002550E4 /* RepositoryDetailsPresenterProtocol.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		8AAE72F828287906002550E4 /* Date */ = {
+			isa = PBXGroup;
+			children = (
+				8AAE72F928287910002550E4 /* DateExtension.swift */,
+			);
+			path = Date;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -582,8 +719,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				8AAE721D2827DE2B002550E4 /* LaunchScreen.storyboard in Resources */,
+				8AAE72EE28286D13002550E4 /* RepositoryDetailsViewController.xib in Resources */,
 				8AAE721A2827DE2B002550E4 /* Assets.xcassets in Resources */,
 				8AAE72652827E75F002550E4 /* RepositoriesViewController.xib in Resources */,
+				8AAE72DF28285C01002550E4 /* RepositoryTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,8 +740,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8AAE72D728284340002550E4 /* RepositoriesViewProtocol.swift in Sources */,
 				8AAE7295282824F2002550E4 /* String+Helpers.swift in Sources */,
 				8AAE72B228282814002550E4 /* NetworkParameters.swift in Sources */,
+				8AAE72DE28285C01002550E4 /* RepositoryTableViewCell.swift in Sources */,
 				8AAE72B0282827E6002550E4 /* NetworkHeaders.swift in Sources */,
 				8AAE729B2828254C002550E4 /* View+Helpers.swift in Sources */,
 				8AAE72C728283545002550E4 /* RepositoryOwnerRepresentable.swift in Sources */,
@@ -616,7 +757,9 @@
 				8AAE72982828251C002550E4 /* Optional+Helpers.swift in Sources */,
 				8AAE72BB28282B81002550E4 /* RepositoriesService.swift in Sources */,
 				8AAE72B728282872002550E4 /* APIServiceContract.swift in Sources */,
+				8AAE72F328286DBB002550E4 /* RepositoryDetailsViewProtocol.swift in Sources */,
 				8AAE729E28282582002550E4 /* NSObject+Helpers.swift in Sources */,
+				8AAE72EC28286D12002550E4 /* RepositoryDetailsPresenter.swift in Sources */,
 				8AAE72772827FBE9002550E4 /* CoordinatorDelegate.swift in Sources */,
 				8AAE72AA282826BB002550E4 /* NetworkConstants.swift in Sources */,
 				8AAE72B428282835002550E4 /* NetworkMethods.swift in Sources */,
@@ -627,14 +770,19 @@
 				8AAE728C282820E2002550E4 /* RepositoryOwner.swift in Sources */,
 				8AAE7292282824BF002550E4 /* AppError.swift in Sources */,
 				8AAE72A728282685002550E4 /* APIBuilder.swift in Sources */,
+				8AAE72D928285B23002550E4 /* Image+Helpers.swift in Sources */,
+				8AAE72FA28287910002550E4 /* DateExtension.swift in Sources */,
 				8AAE72C5282834DF002550E4 /* RepositoryRepresentable.swift in Sources */,
 				8AAE72AC2828275D002550E4 /* APIConstants.swift in Sources */,
 				8AAE72D1282841F8002550E4 /* FetchRepositoriesUseCase.swift in Sources */,
 				8AAE72AE282827C3002550E4 /* NetworkContentType.swift in Sources */,
 				8AAE72B9282828E4002550E4 /* APIService.swift in Sources */,
+				8AAE72ED28286D13002550E4 /* RepositoryDetailsViewController.swift in Sources */,
 				8AAE72112827DE28002550E4 /* AppDelegate.swift in Sources */,
 				8AAE72BE28282B95002550E4 /* RepositoriesServiceContract.swift in Sources */,
+				8AAE72F528286DD0002550E4 /* RepositoryDetailsPresenterProtocol.swift in Sources */,
 				8AAE727D2827FC82002550E4 /* RepositoriesCoordinatorProtocol.swift in Sources */,
+				8AAE72D42828431A002550E4 /* RepositoriesPresenterProtocol.swift in Sources */,
 				8AAE72632827E75F002550E4 /* RepositoriesPresenter.swift in Sources */,
 				8AAE72C028283004002550E4 /* Item.swift in Sources */,
 			);

@@ -8,10 +8,15 @@
 import Foundation
 
 struct RepositoryOwner: Codable {
+    let login: String?
     let id: Int?
-    let name: String?
-    let avatarURLString: String?
+    let avatarURL: String?
+    
 
+    enum CodingKeys: String, CodingKey {
+        case login, id
+        case avatarURL = "avatar_url"
+    }
 }
 
 extension RepositoryOwner: RepositoryOwnerRepresentable {
@@ -20,11 +25,11 @@ extension RepositoryOwner: RepositoryOwnerRepresentable {
     }
     
     var ownerName: String {
-        self.name.value
+        self.login.value
     }
     
     var ownerURLImage: String {
-        self.avatarURLString.value
+        self.avatarURL.value
     }
     
     

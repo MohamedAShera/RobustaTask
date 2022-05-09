@@ -9,8 +9,8 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="RepositoriesViewController" customModule="RobustaTask" customModuleProvider="target">
             <connections>
-                <outlet property="searchBar" destination="V2N-Tp-htk" id="cdL-VN-haR"/>
-                <outlet property="tableView" destination="X72-BE-gHO" id="owS-8i-cPD"/>
+                <outlet property="searchBar" destination="V2N-Tp-htk" id="HIU-dU-CXE"/>
+                <outlet property="tableView" destination="X72-BE-gHO" id="f4b-Ps-VLS"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>
@@ -20,22 +20,15 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="8zx-bh-4Ad">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                     <subviews>
                         <searchBar contentMode="redraw" verticalCompressionResistancePriority="748" translatesAutoresizingMaskIntoConstraints="NO" id="V2N-Tp-htk">
-                            <rect key="frame" x="0.0" y="0.0" width="414" height="134"/>
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
                             <textInputTraits key="textInputTraits"/>
-                            <connections>
-                                <outlet property="delegate" destination="-1" id="PE3-wd-0yQ"/>
-                            </connections>
                         </searchBar>
                         <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="X72-BE-gHO">
-                            <rect key="frame" x="0.0" y="134" width="414" height="762"/>
+                            <rect key="frame" x="0.0" y="90" width="414" height="762"/>
                             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                            <connections>
-                                <outlet property="dataSource" destination="-1" id="vCh-sy-ZJV"/>
-                                <outlet property="delegate" destination="-1" id="s97-fT-yDH"/>
-                            </connections>
                         </tableView>
                     </subviews>
                 </stackView>
@@ -44,7 +37,7 @@
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="8zx-bh-4Ad" secondAttribute="bottom" id="dNf-4P-COM"/>
                 <constraint firstAttribute="trailing" secondItem="8zx-bh-4Ad" secondAttribute="trailing" id="hpA-9w-pt1"/>
-                <constraint firstItem="8zx-bh-4Ad" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="i5w-0H-RC9"/>
+                <constraint firstItem="8zx-bh-4Ad" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="topMargin" id="i5w-0H-RC9"/>
                 <constraint firstItem="8zx-bh-4Ad" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="vi6-TX-xW2"/>
             </constraints>
             <point key="canvasLocation" x="140" y="153"/>

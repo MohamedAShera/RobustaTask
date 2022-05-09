@@ -29,16 +29,9 @@ extension RepositoriesCoordinator: CoordinatorDelegate {
         
     }
     
-//    func presentHomeModule() {
-//        let homeNavigationController = UINavigationController()
-//        homeNavigationController.isNavigationBarHidden = true
-//        let homeCoordinator = TabbarCoordinator(homeNavigationController)
-//        childCoordinators.append(homeCoordinator)
-//
-//        homeCoordinator.start()
-//
-//        homeNavigationController.modalPresentationStyle = .fullScreen
-//        navigationController.present(homeNavigationController, animated: true, completion: nil)
-//    }
+    func presentRepoDetails(item: RepositoryRepresentable) {
+        let vc = RepositoryDetailsViewController.create(item: item)
+        navigationController.pushViewController(vc, animated: true)
+    }
 }
 

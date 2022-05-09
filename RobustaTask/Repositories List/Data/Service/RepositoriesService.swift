@@ -24,6 +24,7 @@ extension RepositoriesService: RepositoriesServiceContract {
         let request = APIBuilder()
             .setPath(using: APIConstants.repositories)
             .setMethod(using: .get)
+            .setParameters(using: .query(["q": searchKey, "per_page": count, "page" : page]))
             .build()
         
         apiService.request(using: request, responseType: RepositoryResponse.self, decoder: JSONDecoder(), completion: completion)
