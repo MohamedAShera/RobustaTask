@@ -9,21 +9,13 @@ import Foundation
 
 struct Item: Codable {
     let id: Int?
-    let name, fullName: String?
+    let name: String?
     let createdAt: Date?
-    let forks, openIssues, watchers: Int?
-    let size, stargazersCount, watchersCount: Int?
-    let language: String?
-    let license: License?
     let owner: RepositoryOwner?
-
+    
     enum CodingKeys: String, CodingKey {
-        case id, size, name, license, forks, language, watchers, owner
-        case fullName = "full_name"
+        case id, name, owner
         case createdAt = "created_at"
-        case openIssues = "open_issues"
-        case stargazersCount = "stargazers_count"
-        case watchersCount = "watchers_count"
     }
 }
 
@@ -43,21 +35,4 @@ extension Item: RepositoryRepresentable {
     var repositoryOwner: RepositoryOwnerRepresentable? {
         self.owner
     }
-    
-    var numberOfForks: Int {
-        self.forks.value
-    }
-    
-    var numberOfStars: Int {
-        self.stargazersCount.value
-    }
-    
-    var repositoryLanguage: String {
-        self.language.value
-    }
-    
-    var licenseName: String {
-        (self.license?.name).value
-    }
 }
-

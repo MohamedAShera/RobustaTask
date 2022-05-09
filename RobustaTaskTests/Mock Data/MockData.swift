@@ -17,18 +17,10 @@ enum MockData {
     static let item = Item(
         id: 0,
         name: "test",
-        fullName: "test",
         createdAt: Date(),
-        forks: 0,
-        openIssues: 0,
-        watchers: 0,
-        size: 0,
-        stargazersCount: 0,
-        watchersCount: 0,
-        language: "test",
-        license: nil,
         owner: repositoryOwner
     )
+    
     static let items = [item]
     
 }
