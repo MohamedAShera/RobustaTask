@@ -12,7 +12,7 @@ extension Date {
     func timeAgoDisplay() -> String {
         let currentDate = Date()
         
-        return ( currentDate.months(from: self)) <= 6 ? currentDate.offset(from: self) :  currentDate.offset(from: self)
+        return currentDate.offset(from: self)
         
     }
     

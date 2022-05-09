@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		8AAE72112827DE28002550E4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72102827DE28002550E4 /* AppDelegate.swift */; };
-		8AAE72152827DE28002550E4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72142827DE28002550E4 /* ViewController.swift */; };
 		8AAE721A2827DE2B002550E4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE72192827DE2B002550E4 /* Assets.xcassets */; };
 		8AAE721D2827DE2B002550E4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8AAE721B2827DE2B002550E4 /* LaunchScreen.storyboard */; };
 		8AAE72282827DE2B002550E4 /* RobustaTaskTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8AAE72272827DE2B002550E4 /* RobustaTaskTests.swift */; };
@@ -80,7 +79,6 @@
 /* Begin PBXFileReference section */
 		8AAE720D2827DE28002550E4 /* RobustaTask.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RobustaTask.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		8AAE72102827DE28002550E4 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		8AAE72142827DE28002550E4 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		8AAE72192827DE2B002550E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8AAE721C2827DE2B002550E4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8AAE721E2827DE2B002550E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -183,10 +181,8 @@
 				8AAE72E328286B97002550E4 /* Repository Details */,
 				8AAE726F2827FB38002550E4 /* Repositories List */,
 				8AAE726E2827E889002550E4 /* Application */,
-				8AAE726D2827E880002550E4 /* Resources */,
 				8AAE72672827E843002550E4 /* Utilities */,
 				8AAE72662827E766002550E4 /* Repositories */,
-				8AAE72142827DE28002550E4 /* ViewController.swift */,
 				8AAE721B2827DE2B002550E4 /* LaunchScreen.storyboard */,
 				8AAE721E2827DE2B002550E4 /* Info.plist */,
 			);
@@ -215,7 +211,6 @@
 			children = (
 				8AAE72A42828263C002550E4 /* Resources */,
 				8AAE7290282824B7002550E4 /* Errors */,
-				8AAE726C2827E875002550E4 /* Bases */,
 				8AAE726B2827E86C002550E4 /* Constants */,
 				8AAE726A2827E85F002550E4 /* Helpers */,
 				8AAE72692827E856002550E4 /* Networking */,
@@ -266,22 +261,6 @@
 				8AAE72B328282835002550E4 /* NetworkMethods.swift */,
 			);
 			path = Constants;
-			sourceTree = "<group>";
-		};
-		8AAE726C2827E875002550E4 /* Bases */ = {
-			isa = PBXGroup;
-			children = (
-				8AAE72A328282626002550E4 /* BasePresenter */,
-				8AAE72A22828261D002550E4 /* BaseViewController */,
-			);
-			path = Bases;
-			sourceTree = "<group>";
-		};
-		8AAE726D2827E880002550E4 /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resources;
 			sourceTree = "<group>";
 		};
 		8AAE726E2827E889002550E4 /* Application */ = {
@@ -469,20 +448,6 @@
 				8AAE72A0282825A5002550E4 /* UITableView+Helpers.swift */,
 			);
 			path = UITableView;
-			sourceTree = "<group>";
-		};
-		8AAE72A22828261D002550E4 /* BaseViewController */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BaseViewController;
-			sourceTree = "<group>";
-		};
-		8AAE72A328282626002550E4 /* BasePresenter */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = BasePresenter;
 			sourceTree = "<group>";
 		};
 		8AAE72A42828263C002550E4 /* Resources */ = {
@@ -812,7 +777,6 @@
 				8AAE728A282820CC002550E4 /* RepositoryResponse.swift in Sources */,
 				8AAE72CE28284114002550E4 /* FetchRepositoriesUseCaseContract.swift in Sources */,
 				8AAE727F2827FC90002550E4 /* RepositoriesCoordinator.swift in Sources */,
-				8AAE72152827DE28002550E4 /* ViewController.swift in Sources */,
 				8AAE72A1282825A5002550E4 /* UITableView+Helpers.swift in Sources */,
 				8AAE72642827E75F002550E4 /* RepositoriesViewController.swift in Sources */,
 				8AAE72FC28294436002550E4 /* SearchOnLocalRepoUseCaseContract.swift in Sources */,
